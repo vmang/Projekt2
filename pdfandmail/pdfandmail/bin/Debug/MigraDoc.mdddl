@@ -1,0 +1,770 @@
+\document
+[
+  Info
+  {
+    Title = "Rechnung der eCar GmbH"
+    Subject = "Rechnung für Keiko Solomon"
+    Author = "Vincent Mang"
+  }
+]
+{
+  \styles
+  {
+    Heading1
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level1
+      }
+    }
+
+    Heading2
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level2
+      }
+    }
+
+    Heading3
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level3
+      }
+    }
+
+    Heading4
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level4
+      }
+    }
+
+    Heading5
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level5
+      }
+    }
+
+    Heading6
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level6
+      }
+    }
+
+    Heading7
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level7
+      }
+    }
+
+    Heading8
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level8
+      }
+    }
+
+    Heading9
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level9
+      }
+    }
+
+    Header
+    {
+      ParagraphFormat
+      {
+        TabStops +=
+        {
+          Position = "16cm"
+          Alignment = Right
+        }
+      }
+    }
+
+    Footer
+    {
+      ParagraphFormat
+      {
+        TabStops +=
+        {
+          Position = "8cm"
+          Alignment = Center
+        }
+      }
+    }
+
+    InvalidStyleName
+    {
+      Font
+      {
+        Bold = true
+        Underline = Dash
+        Color = Lime
+      }
+    }
+
+    Table : Normal
+    {
+      Font
+      {
+        Name = "Times New Roman"
+        Size = 9
+      }
+    }
+
+    Reference : Normal
+    {
+      ParagraphFormat
+      {
+        SpaceBefore = "5mm"
+        SpaceAfter = "5mm"
+        TabStops +=
+        {
+          Position = "16cm"
+          Alignment = Right
+        }
+      }
+    }
+  }
+  \section
+  {
+    \primaryheader
+    {
+      \image("../../ecar_logo.png")
+      [
+        Height = "2cm"
+        Width = "5cm"
+        RelativeHorizontal = Margin
+        RelativeVertical = Line
+        Left = Right
+        Top = Top
+        WrapFormat
+        {
+          Style = Through
+        }
+        LockAspectRatio = true
+      ]
+    }
+    \primaryfooter
+    {
+      \paragraph
+      [
+        Format
+        {
+          Font
+          {
+            Size = 9
+          }
+          Alignment = Center
+        }
+      ]
+      {
+        eCar GmbH · Badstr. 42 · 77654 Offenburg · Deutschland
+      }
+    }
+    \textframe
+    [
+      Width = "5cm"
+    ]
+    {
+      \paragraph
+      [
+        Format
+        {
+          Font
+          {
+            Name = "Times New Roman"
+            Size = 26
+            Bold = true
+          }
+          Alignment = Center
+          SpaceAfter = 4
+        }
+      ]
+      {
+        eCar GmbH
+      }
+    }
+    \textframe
+    [
+      Width = "20cm"
+      RelativeHorizontal = Column
+      RelativeVertical = Page
+      Left = Left
+      Top = "20cm"
+    ]
+    {
+      \paragraph
+      [
+        Format
+        {
+          Font
+          {
+            Name = "Times New Roman"
+            Size = 12
+          }
+          SpaceAfter = 4
+        }
+      ]
+      {
+        Der o.g. Gesamtbetrag wird Ihnen in den nächsten Tagen von folgendem Konto abgebucht:\linebreak
+        \linebreak
+        Kontoinhaber:\tab Keiko Solomon\linebreak
+        BIC:\tab \tab SOLADES1OFG\linebreak
+        IBAN:\tab \tab CZ9139541635019594124615
+      }
+    }
+    \textframe
+    [
+      Height = "3cm"
+      Width = "7cm"
+      RelativeHorizontal = Margin
+      RelativeVertical = Page
+      Left = Left
+      Top = "5cm"
+    ]
+    {
+      \paragraph
+      [
+        Format
+        {
+          Font
+          {
+            Name = "Times New Roman"
+            Size = 7
+          }
+          SpaceAfter = 3
+        }
+      ]
+      {
+        eCar GmbH · Badstr. 42 · 77654 Offenburg · Deutschland
+      }
+      \paragraph
+      {
+        Keiko Solomon\linebreak
+        Weingartenstr. 18\linebreak
+        79098 Freiburg
+      }
+    }
+    \paragraph
+    [
+      Style = "Reference"
+      Format
+      {
+        SpaceBefore = "8cm"
+      }
+    ]
+    {
+      \bold{eCar Rechnung für den Monat März}\tab Offenburg, \field(Date)[Format = "dd.MM.yyyy"]
+    }
+    \table
+    [
+      Style = "Table"
+      Borders
+      {
+        Width = 0.25
+        Left
+        {
+          Width = 0.5
+        }
+        Right
+        {
+          Width = 0.5
+        }
+      }
+    ]
+    {
+      \columns
+      {
+        \column
+        [
+          Format
+          {
+            Alignment = Center
+          }
+          Width = "1cm"
+        ]
+        \column
+        [
+          Format
+          {
+            Alignment = Right
+          }
+          Width = "2.5cm"
+        ]
+        \column
+        [
+          Format
+          {
+            Alignment = Right
+          }
+          Width = "3cm"
+        ]
+        \column
+        [
+          Format
+          {
+            Alignment = Right
+          }
+          Width = "3.5cm"
+        ]
+        \column
+        [
+          Format
+          {
+            Alignment = Center
+          }
+          Width = "2cm"
+        ]
+        \column
+        [
+          Format
+          {
+            Alignment = Right
+          }
+          Width = "4cm"
+        ]
+      }
+      \rows
+      [
+        LeftIndent = 0
+      ]
+      {
+        \row
+        [
+          Format
+          {
+            Font
+            {
+              Bold = true
+            }
+            Alignment = Center
+          }
+          HeadingFormat = true
+          Shading
+          {
+            Color = RGB(178,185,190)
+          }
+        ]
+        {
+          \cell
+          [
+            Borders
+            {
+              Top
+              {
+                Style = Single
+                Width = 0.75
+              }
+              Left
+              {
+                Style = Single
+                Width = 0.75
+              }
+              Bottom
+              {
+                Style = Single
+                Width = 0.75
+              }
+            }
+          ]
+          {
+            Fahrt-ID
+          }
+          \cell
+          [
+            Borders
+            {
+              Top
+              {
+                Style = Single
+                Width = 0.75
+              }
+              Bottom
+              {
+                Style = Single
+                Width = 0.75
+              }
+            }
+          ]
+          {
+            Kilometer
+          }
+          \cell
+          [
+            Borders
+            {
+              Top
+              {
+                Style = Single
+                Width = 0.75
+              }
+              Bottom
+              {
+                Style = Single
+                Width = 0.75
+              }
+            }
+          ]
+          {
+            Stunden
+          }
+          \cell
+          [
+            Borders
+            {
+              Top
+              {
+                Style = Single
+                Width = 0.75
+              }
+              Bottom
+              {
+                Style = Single
+                Width = 0.75
+              }
+            }
+          ]
+          {
+            Preis KM
+          }
+          \cell
+          [
+            Borders
+            {
+              Top
+              {
+                Style = Single
+                Width = 0.75
+              }
+              Bottom
+              {
+                Style = Single
+                Width = 0.75
+              }
+            }
+          ]
+          {
+            Preis Stunden
+          }
+          \cell
+          [
+            Borders
+            {
+              Top
+              {
+                Style = Single
+                Width = 0.75
+              }
+              Bottom
+              {
+                Style = Single
+                Width = 0.75
+              }
+              Right
+              {
+                Style = Single
+                Width = 0.75
+              }
+            }
+          ]
+          {
+            Preis pro Fahrt
+          }
+        }
+        \row
+        [
+          Format
+          {
+            Alignment = Center
+          }
+          TopPadding = 1.5
+        ]
+        {
+          \cell
+          [
+            Borders
+            {
+              Left
+              {
+                Style = Single
+                Width = 0.75
+              }
+              Bottom
+              {
+                Style = Single
+                Width = 0.75
+              }
+            }
+          ]
+          {
+            5
+          }
+          \cell
+          [
+            Borders
+            {
+              Bottom
+              {
+                Style = Single
+                Width = 0.75
+              }
+            }
+          ]
+          {
+            80
+          }
+          \cell
+          [
+            Borders
+            {
+              Bottom
+              {
+                Style = Single
+                Width = 0.75
+              }
+            }
+          ]
+          {
+            4
+          }
+          \cell
+          [
+            Borders
+            {
+              Bottom
+              {
+                Style = Single
+                Width = 0.75
+              }
+            }
+          ]
+          {
+            24,00 €
+          }
+          \cell
+          [
+            Borders
+            {
+              Bottom
+              {
+                Style = Single
+                Width = 0.75
+              }
+            }
+          ]
+          {
+            3,00 €
+          }
+          \cell
+          [
+            Borders
+            {
+              Bottom
+              {
+                Style = Single
+                Width = 0.75
+              }
+              Right
+              {
+                Style = Single
+                Width = 0.75
+              }
+            }
+          ]
+          {
+            27,00 €
+          }
+        }
+        \row
+        [
+          Borders
+          {
+            Visible = false
+          }
+        ]
+        {
+          \cell
+          \cell
+          \cell
+          \cell
+          \cell
+          \cell
+          [
+            Borders
+            {
+              Top
+              {
+                Style = Single
+                Width = 0.75
+              }
+              Left
+              {
+                Style = Single
+                Width = 0.75
+              }
+              Right
+              {
+                Style = Single
+                Width = 0.75
+              }
+            }
+          ]
+        }
+        \row
+        {
+          \cell
+          [
+            Format
+            {
+              Font
+              {
+                Bold = true
+              }
+              Alignment = Right
+            }
+            MergeRight = 4
+            Borders
+            {
+              Visible = false
+            }
+          ]
+          {
+            Netto Preis
+          }
+          \cell
+          \cell
+          \cell
+          \cell
+          \cell
+          [
+            Borders
+            {
+              Left
+              {
+                Style = Single
+                Width = 0.75
+              }
+              Right
+              {
+                Style = Single
+                Width = 0.75
+              }
+            }
+          ]
+          {
+            27,00 €
+          }
+        }
+        \row
+        {
+          \cell
+          [
+            Format
+            {
+              Font
+              {
+                Bold = true
+              }
+              Alignment = Right
+            }
+            MergeRight = 4
+            Borders
+            {
+              Visible = false
+            }
+          ]
+          {
+            Mehrwertsteuer (19%)
+          }
+          \cell
+          \cell
+          \cell
+          \cell
+          \cell
+          [
+            Borders
+            {
+              Left
+              {
+                Style = Single
+                Width = 0.75
+              }
+              Right
+              {
+                Style = Single
+                Width = 0.75
+              }
+            }
+          ]
+          {
+            5,13 €
+          }
+        }
+        \row
+        {
+          \cell
+          [
+            Format
+            {
+              Font
+              {
+                Bold = true
+              }
+              Alignment = Right
+            }
+            MergeRight = 4
+            Borders
+            {
+              Visible = false
+            }
+          ]
+          {
+            Brutto Preis
+          }
+          \cell
+          \cell
+          \cell
+          \cell
+          \cell
+          [
+            Borders
+            {
+              Left
+              {
+                Style = Single
+                Width = 0.75
+              }
+              Bottom
+              {
+                Style = Single
+                Width = 0.75
+              }
+              Right
+              {
+                Style = Single
+                Width = 0.75
+              }
+            }
+          ]
+          {
+            32,13 €
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9ffbb27c2b3e45f39e494be4260b669f" Name="Diagram1">
+        <EntityTypeShape EntityType="Projekt2Model.Adresse" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Projekt2Model.Bank" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Projekt2Model.Kunde" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Projekt2Model.Rechnung" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <AssociationConnector Association="Projekt2Model.FK_Kunde_Adresse" ManuallyRouted="false" />
+        <AssociationConnector Association="Projekt2Model.FK_Kunde_Bank" ManuallyRouted="false" />
+        <AssociationConnector Association="Projekt2Model.FK_Rechnung_Kunde" ManuallyRouted="false" />
+        <AssociationConnector Association="Projekt2Model.FK_Rechnung_Kunde1" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Projekt2Model.Fahrt" Width="1.5" PointX="5.25" PointY="5.25" />
+        <AssociationConnector Association="Projekt2Model.FK_Fahrt_Kunde" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
