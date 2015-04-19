@@ -17,6 +17,8 @@ namespace pdfandmail
         public Kunde()
         {
             this.Rechnung = new HashSet<Rechnung>();
+            this.Karte = new HashSet<Karte>();
+            this.Reservierung = new HashSet<Reservierung>();
             this.Fahrt = new HashSet<Fahrt>();
         }
     
@@ -28,12 +30,15 @@ namespace pdfandmail
         public int Bank_ID { get; set; }
         public bool Gesperrt { get; set; }
         public string Email { get; set; }
+        public string Passwort { get; set; }
     
         public virtual Adresse Adresse { get; set; }
         public virtual Bank Bank { get; set; }
         public virtual Kunde Kunde1 { get; set; }
         public virtual Kunde Kunde2 { get; set; }
         public virtual ICollection<Rechnung> Rechnung { get; set; }
+        public virtual ICollection<Karte> Karte { get; set; }
+        public virtual ICollection<Reservierung> Reservierung { get; set; }
         public virtual ICollection<Fahrt> Fahrt { get; set; }
     }
 }

@@ -21,3 +21,26 @@ C:\Users\Vincent\Documents\Visual Studio 2013\Projects\pdfandmail\pdfandmail\bin
 C:\Users\Vincent\Documents\Visual Studio 2013\Projects\pdfandmail\pdfandmail\bin\Debug\EntityFramework.xml
 C:\Users\Vincent\Documents\Visual Studio 2013\Projects\pdfandmail\pdfandmail\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Vincent\Documents\Visual Studio 2013\Projects\pdfandmail\pdfandmail\bin\Debug\de\EntityFramework.resources.dll
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\bin\Debug\pdfandmail.exe.config
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\obj\Debug\pdfandmail.exe
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\obj\Debug\pdfandmail.pdb
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\bin\Debug\pdfandmail.exe
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\bin\Debug\pdfandmail.pdb
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\bin\Debug\EntityFramework.dll
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\bin\Debug\MigraDoc.DocumentObjectModel.dll
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\bin\Debug\MigraDoc.Rendering.dll
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\bin\Debug\MigraDoc.RtfRendering.dll
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\bin\Debug\PdfSharp.Charting.dll
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\bin\Debug\PdfSharp.dll
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\bin\Debug\EntityFramework.xml
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\bin\Debug\de\EntityFramework.resources.dll
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\bin\Debug\de\MigraDoc.DocumentObjectModel.resources.dll
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\bin\Debug\de\MigraDoc.Rendering.resources.dll
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\bin\Debug\de\MigraDoc.RtfRendering.resources.dll
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\bin\Debug\de\PdfSharp.Charting.resources.dll
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\obj\Debug\pdfandmail.csprojResolveAssemblyReference.cache
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\obj\Debug\pdfandmail.Properties.Resources.resources
+C:\Users\Vincent\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\obj\Debug\pdfandmail.csproj.GenerateResource.Cache

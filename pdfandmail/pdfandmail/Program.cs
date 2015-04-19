@@ -20,7 +20,8 @@ namespace pdfandmail
             //b.getdata();
 
             Statistik s = new Statistik();
-            s.geoSpace();
+            s.setGeoSpace();
+            s.calcTankstationsInSpace();
 
         }
        

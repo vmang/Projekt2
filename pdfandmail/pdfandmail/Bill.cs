@@ -24,7 +24,7 @@ namespace pdfandmail
             int lastKundenId = 0;
             string lastKundenMail = null;
             string fileName = null;
-            
+
             Document doc = null;
             Projekt2Entities p2e = new Projekt2Entities();
             // query all contacts
@@ -33,14 +33,14 @@ namespace pdfandmail
                 //where f.Endzeit == "London"
                 orderby f.Kunde_ID ascending
                 select f;
-            
+
 
             foreach (Fahrt f in queryResults)
                 {
                 if (lastKundenId == f.Kunde_ID)
                     {
                     //write into next row of the current table
-                    fillContent(f);            
+                    fillContent(f);
                     }
                 else
                     {
@@ -90,18 +90,18 @@ namespace pdfandmail
         Document document;
         double totalPrice;
         void saveDocument(String filename)
-        {
-        finishTable();
-        MigraDoc.DocumentObjectModel.IO.DdlWriter.WriteToFile(document, "MigraDoc.mdddl");
-        PdfDocumentRenderer renderer = new PdfDocumentRenderer(true, PdfSharp.Pdf.PdfFontEmbedding.Always);
-        renderer.Document = document;
+            {
+            finishTable();
+            MigraDoc.DocumentObjectModel.IO.DdlWriter.WriteToFile(document, "MigraDoc.mdddl");
+            PdfDocumentRenderer renderer = new PdfDocumentRenderer(true, PdfSharp.Pdf.PdfFontEmbedding.Always);
+            renderer.Document = document;
 
-        renderer.RenderDocument();
+            renderer.RenderDocument();
 
-        renderer.PdfDocument.Save(filename);
-        // ...and start a viewer.
-        Process.Start(filename);
-        }
+            renderer.PdfDocument.Save(filename);
+            // ...and start a viewer.
+            Process.Start(filename);
+            }
 
         void finishTable()
             {
@@ -147,7 +147,7 @@ namespace pdfandmail
             // Create a new MigraDoc document
             document = new Document();
             document.Info.Title = "Rechnung der eCar GmbH";
-            document.Info.Subject = "Rechnung für " +f.Kunde.Vorname + " " + f.Kunde.Name;
+            document.Info.Subject = "Rechnung für " + f.Kunde.Vorname + " " + f.Kunde.Name;
             document.Info.Author = "Vincent Mang";
 
             defineStyles();
@@ -215,10 +215,10 @@ namespace pdfandmail
             h.Format.SpaceAfter = 4;
             h.Format.Font.Bold = true;
             h.Format.Alignment = ParagraphAlignment.Center;
-            
+
             //Create textframe
             textFrame = section.AddTextFrame();
-            
+
             textFrame.Top = "20 cm";
             textFrame.Left = ShapePosition.Left;
             textFrame.RelativeHorizontal = RelativeHorizontal.Column;
@@ -262,7 +262,7 @@ namespace pdfandmail
 
             // Add the print date field
             CultureInfo ci = new CultureInfo("de-DE");
-            
+
             paragraph = section.AddParagraph();
             paragraph.Format.SpaceBefore = "8cm";
             paragraph.Style = "Reference";
@@ -274,7 +274,6 @@ namespace pdfandmail
             // Create the item table
             this.table = section.AddTable();
             this.table.Style = "Table";
-            this.table.Borders.Color = TableBorder;
             this.table.Borders.Width = 0.25;
             this.table.Borders.Left.Width = 0.5;
             this.table.Borders.Right.Width = 0.5;
@@ -320,29 +319,30 @@ namespace pdfandmail
         void fillContent(Fahrt f)
             {
             int km = (int)(f.End_KM - f.Start_KM);
-            int stunden =(int)Math.Ceiling(((TimeSpan) (f.Endzeit - f.Startzeit)).TotalHours);
+            int stunden = (int)Math.Ceiling(((TimeSpan)(f.Endzeit - f.Startzeit)).TotalHours);
             double faktorKm = 0.3;
             double faktorStunde = 0.75;
             double preisKm = km * faktorKm;
             double preisStunde = stunden * faktorStunde;
             double preisFahrt = preisKm + preisStunde;
-            
 
-                // Each item fills two rows
-                Row row1 = this.table.AddRow();
-                row1.TopPadding = 1.5;
-                row1.Format.Alignment = ParagraphAlignment.Center;
-                row1.Cells[0].AddParagraph(f.Fahrt_ID.ToString());
-                row1.Cells[1].AddParagraph(km.ToString());
-                row1.Cells[2].AddParagraph(stunden.ToString());
-                row1.Cells[3].AddParagraph(preisKm.ToString("0.00") + " €");
-                row1.Cells[4].AddParagraph(preisStunde.ToString("0.00") + " €");
-                row1.Cells[5].AddParagraph(preisFahrt.ToString("0.00") + " €");
 
-                totalPrice = totalPrice + preisFahrt;
-                this.table.SetEdge(0, this.table.Rows.Count - 2, 6, 2, Edge.Box, BorderStyle.Single, 0.75);
+            // Each item fills two rows
+            Row row1 = this.table.AddRow();
+            row1.TopPadding = 1.5;
+            row1.Format.Alignment = ParagraphAlignment.Center;
+            row1.Cells[0].AddParagraph(f.Fahrt_ID.ToString());
+            row1.Cells[1].AddParagraph(km.ToString());
+            row1.Cells[2].AddParagraph(stunden.ToString());
+            row1.Cells[3].AddParagraph(preisKm.ToString("0.00") + " €");
+            row1.Cells[4].AddParagraph(preisStunde.ToString("0.00") + " €");
+            row1.Cells[5].AddParagraph(preisFahrt.ToString("0.00") + " €");
+
+            totalPrice = totalPrice + preisFahrt;
+            this.table.SetEdge(0, this.table.Rows.Count - 2, 6, 2, Edge.Box, BorderStyle.Single, 0.75);
 
             }
 
-    }
+        }
 
+    }

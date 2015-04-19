@@ -29,6 +29,12 @@ namespace pdfandmail
         public virtual DbSet<Bank> Bank { get; set; }
         public virtual DbSet<Kunde> Kunde { get; set; }
         public virtual DbSet<Rechnung> Rechnung { get; set; }
+        public virtual DbSet<Car> Car { get; set; }
+        public virtual DbSet<Karte> Karte { get; set; }
+        public virtual DbSet<Reservierung> Reservierung { get; set; }
+        public virtual DbSet<Status> Status { get; set; }
+        public virtual DbSet<Tanksaeule> Tanksaeule { get; set; }
+        public virtual DbSet<Tankstelle> Tankstelle { get; set; }
         public virtual DbSet<Fahrt> Fahrt { get; set; }
     }
 }

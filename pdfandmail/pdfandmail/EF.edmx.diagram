@@ -13,9 +13,23 @@
         <AssociationConnector Association="Projekt2Model.FK_Kunde_Bank" ManuallyRouted="false" />
         <AssociationConnector Association="Projekt2Model.FK_Rechnung_Kunde" ManuallyRouted="false" />
         <AssociationConnector Association="Projekt2Model.FK_Rechnung_Kunde1" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="Projekt2Model.Fahrt" Width="1.5" PointX="5.25" PointY="5.25" />
+        <EntityTypeShape EntityType="Projekt2Model.Car" Width="1.5" PointX="0.75" PointY="9.125" />
+        <EntityTypeShape EntityType="Projekt2Model.Karte" Width="1.5" PointX="5.25" PointY="13" />
+        <EntityTypeShape EntityType="Projekt2Model.Reservierung" Width="1.5" PointX="3" PointY="13.125" />
+        <EntityTypeShape EntityType="Projekt2Model.Status" Width="1.5" PointX="0.75" PointY="13.25" />
+        <EntityTypeShape EntityType="Projekt2Model.Tanksaeule" Width="1.5" PointX="5.25" PointY="10.25" />
+        <AssociationConnector Association="Projekt2Model.FK_Car_Status" />
+        <AssociationConnector Association="Projekt2Model.FK_Reservierung_Car" />
+        <AssociationConnector Association="Projekt2Model.FK_Status_Car" />
+        <AssociationConnector Association="Projekt2Model.FK_Karte_Kunde" />
+        <AssociationConnector Association="Projekt2Model.FK_Reservierung_Kunde" />
+        <EntityTypeShape EntityType="Projekt2Model.Fahrt" Width="1.5" PointX="7.5" PointY="6.625" />
+        <AssociationConnector Association="Projekt2Model.FK_Fahrt_Car" />
+        <AssociationConnector Association="Projekt2Model.FK_Abgabeort_Tanksaeule" />
+        <AssociationConnector Association="Projekt2Model.FK_Abholort_Tanksaeule" />
         <AssociationConnector Association="Projekt2Model.FK_Fahrt_Kunde" />
-      </Diagram>
+        <AssociationConnector Association="Projekt2Model.FK_Fahrt_Reservierung" />
+        </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

@@ -12,23 +12,23 @@ namespace pdfandmail
     using System;
     using System.Collections.Generic;
     
-    public partial class Fahrt
+    public partial class Reservierung
     {
-        public int Fahrt_ID { get; set; }
-        public int Abholort { get; set; }
-        public int Abgabeort { get; set; }
+        public Reservierung()
+        {
+            this.Fahrt = new HashSet<Fahrt>();
+        }
+    
+        public int Reservierung_ID { get; set; }
         public Nullable<System.DateTime> Startzeit { get; set; }
         public Nullable<System.DateTime> Endzeit { get; set; }
-        public Nullable<double> Start_KM { get; set; }
-        public Nullable<double> End_KM { get; set; }
+        public string Abholort { get; set; }
+        public string Abgabeort { get; set; }
         public Nullable<int> Car_ID { get; set; }
         public Nullable<int> Kunde_ID { get; set; }
-        public Nullable<int> Reservierung_ID { get; set; }
     
         public virtual Car Car { get; set; }
-        public virtual Tanksaeule Tanksaeule { get; set; }
-        public virtual Tanksaeule Tanksaeule1 { get; set; }
         public virtual Kunde Kunde { get; set; }
-        public virtual Reservierung Reservierung { get; set; }
+        public virtual ICollection<Fahrt> Fahrt { get; set; }
     }
 }
