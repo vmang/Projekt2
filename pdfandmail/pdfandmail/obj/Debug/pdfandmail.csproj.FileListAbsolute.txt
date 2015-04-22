@@ -21,3 +21,6 @@ C:\Users\Vincent\Documents\Visual Studio 2013\Projects\pdfandmail\pdfandmail\bin
 C:\Users\Vincent\Documents\Visual Studio 2013\Projects\pdfandmail\pdfandmail\bin\Debug\EntityFramework.xml
 C:\Users\Vincent\Documents\Visual Studio 2013\Projects\pdfandmail\pdfandmail\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Vincent\Documents\Visual Studio 2013\Projects\pdfandmail\pdfandmail\bin\Debug\de\EntityFramework.resources.dll
+C:\Users\Carolin Seitz\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\bin\Debug\pdfandmail.exe.config
+C:\Users\Carolin Seitz\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\obj\Debug\pdfandmail.exe
+C:\Users\Carolin Seitz\Documents\GitHub\Projekt2\pdfandmail\pdfandmail\obj\Debug\pdfandmail.pdb
