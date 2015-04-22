@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="9ffbb27c2b3e45f39e494be4260b669f" Name="Diagram1">
+      <Diagram DiagramId="9ffbb27c2b3e45f39e494be4260b669f" Name="Diagram1" ZoomLevel="86">
         <EntityTypeShape EntityType="Projekt2Model.Adresse" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
         <EntityTypeShape EntityType="Projekt2Model.Bank" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
         <EntityTypeShape EntityType="Projekt2Model.Kunde" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
@@ -15,6 +15,22 @@
         <AssociationConnector Association="Projekt2Model.FK_Rechnung_Kunde1" ManuallyRouted="false" />
         <EntityTypeShape EntityType="Projekt2Model.Fahrt" Width="1.5" PointX="5.25" PointY="5.25" />
         <AssociationConnector Association="Projekt2Model.FK_Fahrt_Kunde" />
+        <EntityTypeShape EntityType="Projekt2Model.Car" Width="1.5" PointX="7.375" PointY="1" />
+        <EntityTypeShape EntityType="Projekt2Model.Status" Width="1.5" PointX="9.625" PointY="1" />
+        <AssociationConnector Association="Projekt2Model.FK_Car_Status" />
+        <AssociationConnector Association="Projekt2Model.FK_Fahrt_Car" />
+        <AssociationConnector Association="Projekt2Model.FK_Status_Car" />
+        <EntityTypeShape EntityType="Projekt2Model.Karte" Width="1.5" PointX="5.25" PointY="9.75" />
+        <EntityTypeShape EntityType="Projekt2Model.Reservierung" Width="1.5" PointX="9.625" PointY="4.625" />
+        <AssociationConnector Association="Projekt2Model.FK_Reservierung_Car" />
+        <AssociationConnector Association="Projekt2Model.FK_Fahrt_Reservierung" />
+        <AssociationConnector Association="Projekt2Model.FK_Karte_Kunde" />
+        <AssociationConnector Association="Projekt2Model.FK_Reservierung_Kunde" />
+        <EntityTypeShape EntityType="Projekt2Model.Tanksaeule" Width="1.5" PointX="9.625" PointY="9" />
+        <EntityTypeShape EntityType="Projekt2Model.Tankstelle" Width="1.5" PointX="7.375" PointY="9" />
+        <AssociationConnector Association="Projekt2Model.FK_Abgabeort_Tanksaeule" />
+        <AssociationConnector Association="Projekt2Model.FK_Abholort_Tanksaeule" />
+        <AssociationConnector Association="Projekt2Model.FK_Tanksaeule_Tankstelle" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
